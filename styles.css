@@ -3,12 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: aliceblue;
     line-height: 1.6;
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: aliceblue;
+    color: #4a5f7a;
     padding: 20px;
     text-align: center;
 }
@@ -24,21 +25,54 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: azure;
     text-decoration: none;
+    font-weight: bold;
+    background-color: #4a5f7a;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #5f799c;
 }
 
 section {
     padding: 20px;
     margin: 20px;
+    background-color: rgb(218, 228, 236);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(76, 86, 104, 0.274);
+}
+
+h2 {
+    color: #4a5f7a;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: aliceblue;
+    color: #4a5f7a;
     text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/*Media Queries for Mobile Devices */
+@media only screen and (max-width:600px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
 }
