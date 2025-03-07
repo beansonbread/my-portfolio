@@ -1,4 +1,8 @@
-/* General Styles */
+/* header */
+html {
+    margin-bottom: 100px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -37,6 +41,7 @@ nav ul li a:hover {
     background-color: #5f799c;
 }
 
+/* projects section */
 section {
     padding: 20px;
     margin: 20px;
@@ -48,6 +53,9 @@ section {
 h2 {
     color: #4a5f7a;
     width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    font-size: x-large;
 }
 
 #projects {
@@ -89,6 +97,46 @@ h3 {
     border-radius: 5px;
 }
 
+/* contact section */
+
+form {
+    text-align: center;
+}
+
+label {
+    font-weight: 550;
+    line-height: 100%;
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    color: #555;
+}
+
+input {
+    padding: 5px 0;
+    width: 50%;
+    border-radius: 5px;
+    border-style: hidden;
+    margin: 5px auto;
+}
+
+button {
+    background-color: rgb(68, 106, 139);
+    border-style: hidden;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px ;
+}
+
+button:hover {
+    background-color:rgb(128, 162, 187);
+    color:rgba(255, 255, 255, 0.89);
+}
+
+.errorMessage {
+    display: none;
+}
 footer {
     background-color: aliceblue;
     color: #4a5f7a;
