@@ -1,3 +1,15 @@
+/*about section*/
+document.addEventListener("DOMContentLoaded", function () {
+var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 25,
+    startDelay: 1000,
+    backSpeed: 0,
+    fadeOut: true,
+    loop: false
+  });
+});   
+
 /*projects section*/
 document.querySelectorAll(".details").forEach(button => {
     button.addEventListener("click", showDetails) 
