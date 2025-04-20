@@ -1,3 +1,4 @@
+
 /*about section*/
 document.addEventListener("DOMContentLoaded", function () {
 var typed = new Typed('#typed', {
@@ -12,20 +13,33 @@ var typed = new Typed('#typed', {
 
 /*projects section*/
 document.querySelectorAll(".details").forEach(button => {
-    button.addEventListener("click", showDetails) 
+    button.addEventListener("click", showDetails);
 });
-        
-function showDetails(){
-    const projectId = this.getAttribute("data-target");
-    const description = document.getElementById(projectId);
 
-    if (description.style.display === "none") {
-        description.style.display = "block";
-        this.textContent = "Hide Details";
-    } else {
-        description.style.display = "none";
-        this.textContent = "Show Details";
-    }
+document.querySelectorAll(".details-inner").forEach(button => {
+    button.addEventListener("click", hideDetails);
+});
+
+function showDetails() {
+    const targetId = this.getAttribute("data-target");
+    const card = document.getElementById(targetId);
+    const title = document.getElementById(`${targetId}-title`);
+    const showButton = document.getElementById(`${targetId}-button`);
+
+    if (card) card.style.display = "block";
+    if (title) title.style.display = "none";
+    if (showButton) showButton.style.display = "none";
+}
+
+function hideDetails() {
+    const targetId = this.getAttribute("data-target");
+    const card = document.getElementById(targetId);
+    const title = document.getElementById(`${targetId}-title`);
+    const showButton = document.getElementById(`${targetId}-button`);
+
+    if (card) card.style.display = "none";
+    if (title) title.style.display = "block";
+    if (showButton) showButton.style.display = "block";
 }
 
 /*contact section*/
