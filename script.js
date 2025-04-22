@@ -17,8 +17,8 @@ var setVanta = ()=>{
       scale: 1.00,
       scaleMobile: 1.00,
       backgroundColor: "#bed6dd",
-      color1: "#ddc2be",
-      color2: "#dd9b8f",
+      color1: "#ff9a8b",
+      color2: "#fad0c4",
       quantity: 4.00
     })
     }
