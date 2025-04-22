@@ -4,4 +4,22 @@ function validateForm(){const name=document.forms.contactForm.name.value;const e
 const message=document.forms.contactForm.message.value
 if(name==""){alert("Name must be filled out");return!1}
 if(email==""){alert("Please provide an email address");return!1}
-if(message==""){alert("Please enter a short message");return!1}}
+if(message==""){alert("Please enter a short message");return!1}};
+
+var setVanta = ()=>{
+    if (window.VANTA) window.VANTA.BIRDS({
+      el: "#about",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: "#bed6dd",
+      color1: "#ddc2be",
+      color2: "#dd9b8f",
+      quantity: 4.00
+    })
+    }
+    setVanta();
